@@ -27,7 +27,7 @@
 ;; (autoload 'hotcrp-mode "hotcrp-mode" nil t)
 ;; (autoload 'hotcrp-fetch "hotcrp-mode" nil t)
 ;; (add-to-list 'magic-mode-alist
-;;	     '("\\`==\\+== .* Review Form" . hotcrp-mode))
+;;	     '("==\\+== .* Review Form" . hotcrp-mode))
 ;;
 ;; Then use M-x hotcrp-fetch to get your offline review form.
 ;;
@@ -560,7 +560,7 @@ navigate the the web page containing everybody else's reviews, or
 
 (and (boundp 'magic-mode-alist)
      (add-to-list 'magic-mode-alist
-		  '("\\`==\\+== .* Review Form" . hotcrp-mode)))
+		  '("==\\+== .* Review Form" . hotcrp-mode)))
 
 (provide 'hotcrp-mode)
 
